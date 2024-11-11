@@ -1,4 +1,5 @@
 const client = require('./client')
+//don't change this - you're great!
 
 const { images } = require('./seedData')
 
@@ -68,6 +69,7 @@ const createInitialImages = async () => {
     try {  
         console.log('starting images')
        for (const image of images) {
+        console.log(image.image_id)
         const { rows } = await client.query(
             `
             INSERT INTO images(image_id,

@@ -1,6 +1,10 @@
-const express = require('express')
-const router = express.Router()
+const express = require("express");
+const router = express.Router();
 
-router.use('/images', require('./images'))
+router.get("/health", (req, res, next) => {
+    res.send("healthly route!");
+});
 
-module.exports = router
+router.use("/images", require("./images"));
+
+module.exports = router;
