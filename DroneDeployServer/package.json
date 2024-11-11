@@ -2,7 +2,7 @@
   "name": "dronedeployserver",
   "version": "1.0.0",
   "description": "server",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "seed": "node ./db/seed.js",
@@ -13,8 +13,10 @@
   "dependencies": {
     "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "Express": "^3.0.1",
+    "express": "^4.21.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.7",
     "pg": "^8.13.1"

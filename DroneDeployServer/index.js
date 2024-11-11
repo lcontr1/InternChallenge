@@ -16,10 +16,10 @@ app.get('/', (req, res) => {
 app.use(cors());
 
 //router adding /api prefix
-app.use('/api', require('./api'))
+// app.use('/api', require('./api'))
 
 //listen to port
 app.listen(PORT, () => {
-    PORT.keepAliveTimeout(120000)
+    // PORT.keepAliveTimeout(120000)
     console.log(`Server listening on port ${PORT}`)
 })
